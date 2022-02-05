@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validaciónes</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre">
+					<i class="formulario__validacion-estado"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que iniciar en mayuscula, acepta la letra "ñ" y letras con acento.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__sueldo">
+				<label for="sueldo" class="formulario__label">Sueldo</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="sueldo" id="sueldo">
+					<i class="formulario__validacion-estado"></i>
+				</div>
+				<p class="formulario__input-error">El sueldo tiene que ser mayor de 5,186.10 y menor de 36,302.70.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__horas">
+				<label for="horas" class="formulario__label">Horas trabajadas</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="horas" id="horas">
+					<i class="formulario__validacion-estado"></i>
+				</div>
+				<p class="formulario__input-error">Las horas trabajadas no pueden ser menor a 8 horas y mayor a 16.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__rfc">
+				<label for="rfc" class="formulario__label">RFC</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="rfc" id="rfc">
+					<i class="formulario__validacion-estado"></i>
+				</div>
+				<p class="formulario__input-error">El mes del RFC debe ser mayor a 1 y menor a 12 y en dias mayor a 1 y menor a 31.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__empleados">
+				<label for="empleados" class="formulario__label">Número de Empleados</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="empleados" id="empleados">
+					<i class="formulario__validacion-estado"></i>
+				</div>
+				<p class="formulario__input-error">Los dos primeros caracteres deben ser alfabéticos y los 6 siguientes numericos.</p>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/formulario.js"></script>
+</body>
+</html>
